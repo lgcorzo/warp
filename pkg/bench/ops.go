@@ -1197,7 +1197,7 @@ func StreamOperationsFromCSV(r io.Reader, analyzeOnly bool, offset, limit int, l
 		if err != nil {
 			return err
 		}
-		objs, err := strconv.ParseInt(values[fieldIdx["n_objects"]], 10, 64)
+		objs, err := strconv.ParseInt(values[fieldIdx["n_objects"]], 10, 0)
 		if err != nil {
 			return err
 		}
